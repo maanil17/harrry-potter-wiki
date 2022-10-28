@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+body,html{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  height: 100%;
+  width: 100%;
+
+
+}
+header{
+  margin-top: 100px;
+}
+
+
+.title{
+  font-size: 100px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.center{
+  background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+color: white;
+font-weight: lighter;
+
+}
+
+
+
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+
+.filterTag{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  column-gap: 20px;
+  font-size: larger;
+}
+
+.names{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type='text'] {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+  outline: none;
+  margin-top: 20px;
+}
+.names{
+  text-align: center;
+  margin-top: 5px;
+}
+.card-info{
+  height: 500px;
+  width: 200px;
+  color: white;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
+}
+
+.image{
+  height: 250px;
+  width: 200px;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+
+video{
+  width: 100%;
+  height: 100vh;
+  object-fit:cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+  }
+
+
+  .title{
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+  }
+
+  .filterTag{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  }
+
+  .card-info{
+    height: 420px;
+  }
+
+
+video{
+  object-fit: cover;
+}
+
+  
+}
+
