@@ -21,7 +21,7 @@ function App() {
    useEffect(() => {
   const fetchData=()=>
   {
-     axios.get("https://hp-api.herokuapp.com/api/characters").then((res)=>{
+     axios.get("https://hp-api.onrender.com/api/characters").then((res)=>{
      setresult(res.data);
      setresultcopy(res.data)
      setresultcopy2(res.data);
